@@ -1,11 +1,11 @@
 [
   {
     "kernelSource": {
-      "name": "bxsj-KernelSU-Proton-release",
-      "repo": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource",
-      "branch": "cmi-r-oss",
-      "device": "cmi",
-      "defconfig": "cmi_user_defconfig"
+      "name": "ScarletX-Whyred",
+      "repo": "https://github.com/NopeNopeGuy/android_kernel_xiaomi_scarlet",
+      "branch": "a13/dynamic",
+      "device": "whyred",
+      "defconfig": "vendor/whyred-perf_defconfig"
     },
     "withKernelSU": true,
     "toolchains": [
@@ -16,7 +16,7 @@
         "binPath": ["bin"]
       }
     ],
-    "ccache": false,
+    "ccache": true,
     "params": {
       "ARCH": "arm64",
       "CC": "proton-clang/bin/clang",
@@ -39,8 +39,8 @@
     "AnyKernel3": {
       "use": true,
       "release": true,
-      "repo": "https://github.com/wdnmdkiki/AnyKernel3/",
-      "branch": "cmi"
+      "repo": "https://github.com/NopeNopeGuy/AnyKernel3",
+      "branch": "master"
     }
   }
 ]
